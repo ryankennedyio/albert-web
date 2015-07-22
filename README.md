@@ -1,3 +1,25 @@
+ALBERT HACKATHON WORDPRESS WEBSITE
+
+Setup-
+
+Checkout the repo and do `vagrant up` to set up the repository & everything else.
+It should rewrite your hosts file.
+
+Our site is then available at `http://albert.dev`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Varying Vagrant Vagrants
 
 Varying Vagrant Vagrants is an open source [Vagrant](https://www.vagrantup.com) configuration focused on [WordPress](https://wordpress.org) development. VVV is [MIT Licensed](https://github.com/varying-vagrant-vagrants/vvv/blob/master/LICENSE).
