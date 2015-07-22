@@ -1,15 +1,15 @@
 <?php
 /*
-	Plugin Name: Woocommerce CSV Import
+	Plugin Name: reconsale SKU import
 	Plugin URI: http://allaerd.org/
-	Description: Import CSV files in Woocommerce
+	Description: Forked from Woocommerce CSV Import by Allaerd Mensonides
 	
 	Version: 3.0.5
 	
 	License: GPLv2 or later
 	
 	Author: Allaerd Mensonides
-	Author URI: http://allaerd.org
+
 	
 	Text Domain: woocsv-import
 	Domain Path: /languages
@@ -42,36 +42,4 @@ function woocsv_load_plugin_textdomain()
 do_action ('woocsv_after_init');
 
 
-/* future stuf
-	
-// test update
-
-add_filter ('pre_set_site_transient_update_plugins', 'display_transient_update_plugins');
-
-function display_transient_update_plugins ($transient)
-{
-    var_dump($transient);
-}
-
-
-$batches = get_option('woocsv_batches');
-
-foreach ( rsort ( $batches ) as $b) {
-	echo date('m/d/Y H:i:s', $b['timestamp']) . '<br />' ;	
-}
-
-add_filter('plugin_row_meta', 'add_support_link' ,10,2);
-
-function add_support_link($links, $file) {
-	$plugin = plugin_basename(__FILE__);
-	if(!current_user_can('install_plugins')){
-		return $links;
-	}
-	//if($file == $this->plugin_basefile){
-	if( $file == $plugin	){ 
-		$links[] = '<a href="https://allaerd.org/knowledgebase/" target="_blank">'.__('Docs', 'woocsv-import').'</a>';
-		$links[] = '<a href="https://allaerd.org/shop/" target="_blank">'.__('Add-ons', 'woocsv-import').'</a>';			}
-	return $links;
-}
-*/
 
